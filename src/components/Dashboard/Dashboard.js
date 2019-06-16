@@ -13,7 +13,7 @@ const Dashboard = () => {
             <Search />
 
 
-        </Grid>)
+        </Grid> );
 
 };
 

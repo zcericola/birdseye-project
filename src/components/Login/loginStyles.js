@@ -6,7 +6,7 @@ import {
 
 } from '../../globalStyles';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles( {
     loginContainer: {
         height: '100%'
     }
@@ -43,7 +43,7 @@ const useStyles = makeStyles({
     }
     , bgContainer: {
         height: '100vh'
-        , backgroundImage: `url(${loginBg})`
+        , backgroundImage: `url(${ loginBg })`
         , backgroundSize: '100% 100%'
 
 
@@ -69,12 +69,12 @@ const useStyles = makeStyles({
     , loginBtn: {
         width: '50%'
         , borderRadius: 0
-        , [`& -outlined`]: {
+        , [ `& -outlined` ]: {
             background: '#000'
         }
 
     }
 
-});
+} );
 
 export default useStyles;

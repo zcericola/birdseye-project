@@ -2,13 +2,13 @@ import React from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 
-const theme = createMuiTheme({
+const theme = createMuiTheme( {
     palette: {
         primary: {
-            main: '#051586',
+            main: '#051586'
         }
         , secondary: {
-            main: '#4935B8',
+            main: '#4935B8'
         }
 
     }
@@ -17,7 +17,7 @@ const theme = createMuiTheme({
         , fontFamily: [
             'Roboto'
             , 'sans-serif'
-        ].join(',')
+        ].join( ',' )
         , fontColor: '#444'
 
     }
@@ -37,10 +37,10 @@ const theme = createMuiTheme({
             , outlined: {
                 background: 'inherit'
 
-                , "&:hover": {
+                , '&:hover': {
                     backgroundColor: 'transparent'
                 }
-            },
+            }
         }
 
 
@@ -53,9 +53,9 @@ const theme = createMuiTheme({
 
     }
 
-});
+} );
 
-const ThemeWrapper = ({ children }) => (
+const ThemeWrapper = ( { children } ) => (
     <MuiThemeProvider
         theme={theme}
     >

@@ -24,6 +24,10 @@ const useStyles = makeStyles({
         , width: '50%'
         , background: secondaryColor
         , margin: '10px 0 10px 20px'
+        , [`& multilineColor`]: {
+            color: 'white'
+
+        }
 
     }
     , icon: {
