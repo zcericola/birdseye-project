@@ -4,7 +4,6 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
     palette: {
-
         primary: {
             main: '#051586',
         }
@@ -26,19 +25,19 @@ const theme = createMuiTheme({
         MuiOutlinedInput: {
             input: {
                 fontSize: 14
-
             }
 
         }
-
         , MuiButton: {
             root: {
                 borderRadius: 0
                 , margin: '10px'
+                , fontSize: 11
             }
             , outlined: {
+                background: 'inherit'
 
-                "&:hover": {
+                , "&:hover": {
                     backgroundColor: 'transparent'
                 }
             },

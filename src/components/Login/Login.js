@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 import useStyles from './loginStyles';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
@@ -7,7 +8,13 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 
-const Login = () => {
+const Login = (props) => {
+
+    const signIn = () => () => {
+        //sign in logic here
+        //validate inputs and if valid, allow user to login
+        return props.history.push('/dashboard');
+    };
     const {
         loginContainer
         , formContainer
@@ -23,6 +30,7 @@ const Login = () => {
         , passwordLink
         , birdsEyeLogo
         , loginBtn
+        , signInButton
 
     } = useStyles();
     return (
@@ -87,6 +95,7 @@ const Login = () => {
                         className={loginBtn}
                         color='black'
                         margin='normal'
+                        onClick={signIn()}
                     >
                         Sign In
                     </Button>

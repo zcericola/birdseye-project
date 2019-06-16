@@ -1,5 +1,10 @@
 import { makeStyles } from '@material-ui/styles';
 import loginBg from '../../assets/login_bg.png';
+import {
+    defaultTextFieldStyle
+    , textGray
+
+} from '../../globalStyles';
 
 const useStyles = makeStyles({
     loginContainer: {
@@ -32,7 +37,7 @@ const useStyles = makeStyles({
     }
     , passwordLink: {
         fontSize: 10
-        , color: '#777'
+        , color: textGray
         , textTransform: 'uppercase'
 
     }
@@ -52,10 +57,7 @@ const useStyles = makeStyles({
 
     }
     , formField: {
-        [`& fieldset`]: {
-            borderRadius: 0
-
-        }
+        ...defaultTextFieldStyle
 
     }
     , label: {
@@ -67,7 +69,9 @@ const useStyles = makeStyles({
     , loginBtn: {
         width: '50%'
         , borderRadius: 0
-        , margin: 10
+        , [`& -outlined`]: {
+            background: '#000'
+        }
 
     }
 
