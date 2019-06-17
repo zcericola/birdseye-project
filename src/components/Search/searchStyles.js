@@ -8,7 +8,8 @@ import {
 
 const useStyles = makeStyles( {
     searchContainer: {
-        height: '90%'
+        maxHeight: 100
+        , height: '90%'
         , display: 'flex'
         , alignItems: 'center'
         , background: primaryColor

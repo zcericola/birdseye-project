@@ -1,3 +1,4 @@
+/* eslint react/prop-types: 0 */
 import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import useStyles from './listStyles';

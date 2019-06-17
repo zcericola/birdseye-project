@@ -4,6 +4,8 @@ import { accentGray } from '../../globalStyles';
 const useStyles = makeStyles( {
     dashboardContainer: {
         backgroundColor: accentGray
+        , height: '100vh'
+
     }
 
 } );

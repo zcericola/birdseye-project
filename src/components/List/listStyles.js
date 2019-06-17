@@ -6,11 +6,11 @@ import {
     centerVandH,
     secondaryColor
 } from '../../globalStyles';
+import { positions } from '@material-ui/system';
 
 const useStyles = makeStyles( {
     ListContainer: {
         backgroundColor: '#fff'
-        , height: '100vh'
         , [ '@media(maxWidth: 780px)' ]: {
             order: 2
         }
