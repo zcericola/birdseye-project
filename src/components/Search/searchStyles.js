@@ -6,12 +6,15 @@ import {
     , searchSpanText
 } from '../../globalStyles';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles( {
     searchContainer: {
         height: '90%'
         , display: 'flex'
         , alignItems: 'center'
         , background: primaryColor
+        , [ '@media(maxWidth: 780px)' ]: {
+            order: 1
+        }
 
     }
     , birdsEyeLogo: {
@@ -24,7 +27,7 @@ const useStyles = makeStyles({
         , width: '50%'
         , background: secondaryColor
         , margin: '10px 0 10px 20px'
-        , [`& multilineColor`]: {
+        , [ `& multilineColor` ]: {
             color: 'white'
 
         }
@@ -59,6 +62,6 @@ const useStyles = makeStyles({
     }
 
 
-});
+} );
 
 export default useStyles;

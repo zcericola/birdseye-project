@@ -9,7 +9,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import useStyles from './searchStyles';
 import logo from '../../assets/birdseye_logo.png';
 
-const Search = (props) => {
+const Search = ( props ) => {
     const {
         searchContainer
         , formField
@@ -25,6 +25,7 @@ const Search = (props) => {
         <Grid
             item
             className={searchContainer}
+            xs={12}
             md={8}
         >
             <img src={logo}

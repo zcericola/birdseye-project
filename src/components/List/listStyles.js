@@ -2,14 +2,18 @@
 import { makeStyles } from '@material-ui/styles';
 import {
     primaryColor,
-    purpleGray
+    purpleGray,
+    centerVandH,
+    secondaryColor
 } from '../../globalStyles';
 
 const useStyles = makeStyles( {
-    tasksContainer: {
-        border: '2px solid orange'
-        , height: 'auto'
-
+    ListContainer: {
+        backgroundColor: '#fff'
+        , height: '100vh'
+        , [ '@media(maxWidth: 780px)' ]: {
+            order: 2
+        }
     }
     , title: {
         margin: '10px 30px'
@@ -19,9 +23,13 @@ const useStyles = makeStyles( {
         width: '20%'
     }
     , taskCreator: {
-        height: 200
+        ...centerVandH
+        , height: 100
+        , color: secondaryColor
         , backgroundColor: purpleGray
-
+        , textTransform: 'uppercase'
+        , cursor: 'pointer'
+        , margin: 0
     }
 
 } );

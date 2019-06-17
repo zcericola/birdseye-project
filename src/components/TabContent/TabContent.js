@@ -1,3 +1,4 @@
+/* eslint react/prop-types: 0 */
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import useStyles from './tabContentStyles';
@@ -7,7 +8,7 @@ import Tab from '@material-ui/core/Tab';
 
 
 
-const TabContent = ({ children }) => {
+const TabContent = ( { children } ) => {
     const {
         contentContainer
     } = useStyles();

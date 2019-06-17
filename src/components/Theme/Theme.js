@@ -31,8 +31,8 @@ const theme = createMuiTheme( {
         , MuiButton: {
             root: {
                 borderRadius: 0
-                , margin: '10px'
                 , fontSize: 11
+                , margin: 10
             }
             , outlined: {
                 background: 'inherit'

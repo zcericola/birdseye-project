@@ -1,6 +1,6 @@
 import React from 'react';
 import Search from '../Search/Search';
-import Tasks from '../Tasks/Tasks';
+import List from '../List/List';
 import Grid from '@material-ui/core/Grid';
 
 const Dashboard = () => {
@@ -9,7 +9,7 @@ const Dashboard = () => {
             container
             className="dashboard-container"
         >
-            <Tasks />
+            <List />
             <Search />
 
 
