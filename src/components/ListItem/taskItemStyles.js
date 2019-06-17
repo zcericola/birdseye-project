@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/styles';
-import { textGray, accentGray, purpleGray } from '../../globalStyles';
+import { textGray, accentGray } from '../../globalStyles';
 
 const useStyles = makeStyles( {
     itemContainer: {

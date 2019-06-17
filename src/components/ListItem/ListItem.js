@@ -12,7 +12,6 @@ const ListItem = ( { taskName, scheduledAt } ) => {
         itemContainer
         , accentText
         , itemSubTitle
-        , scheduledTime
         , timeContainer
         , description
     } = useStyles();
