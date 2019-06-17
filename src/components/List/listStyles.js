@@ -6,7 +6,6 @@ import {
     centerVandH,
     secondaryColor
 } from '../../globalStyles';
-import { positions } from '@material-ui/system';
 
 const useStyles = makeStyles( {
     ListContainer: {
