@@ -7,7 +7,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 
 
 
-const ListItem = ( { taskName, scheduledAt } ) => {
+const ListItem = ( { taskName, scheduledAt, completed } ) => {
     const {
         itemContainer
         , accentText

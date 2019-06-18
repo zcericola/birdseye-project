@@ -10,80 +10,20 @@ import TabContent from '../TabContent/TabContent';
 import ListItem from '../ListItem/ListItem';
 
 
-const List = ( { listTitle } ) => {
+
+const List = ( { listTitle, showTabs, date, exTasks } ) => {
     const {
-        ListContainer
-        , title
+        title
         , taskTab
         , taskCreator
+        , dateSubtitle
+        , completedTitle
+        , dashedLines
+        , completedSection
 
     } = useStyles();
     const [ selectedTab, setSelectedTab ] = useState( 0 );
-    const [ list, addNewTask ] = useState( [
-        {
-            name: 'V1Interview Scripts'
-            , scheduledAt: {
-                day: 'Today'
-                , time: '8:00 AM'
-            }
-        }
-        , {
-            name: 'Review Scripts'
-            , scheduledAt: {
-                day: 'Today'
-                , time: '8:00 AM'
-            }
-        }
-        , {
-            name: 'Customer Map'
-            , scheduledAt: {
-                day: 'Today'
-                , time: '8:00 AM'
-            }
-        }
-        , {
-            name: 'V1 DOB to web'
-            , scheduledAt: {
-                day: 'Today'
-                , time: '8:00 AM'
-            }
-        }
-        , {
-            name: 'Order Business Cards'
-            , scheduledAt: {
-                day: 'Today'
-                , time: '8:00 AM'
-            }
-        }
-        , {
-            name: 'Schedule Dribble Post'
-            , scheduledAt: {
-                day: 'Today'
-                , time: '8:00 AM'
-            }
-        }
-        , {
-            name: 'Send Invites'
-            , scheduledAt: {
-                day: 'Today'
-                , time: '8:00 AM'
-            }
-        }
-        , {
-            name: 'UX and Wireframing'
-            , scheduledAt: {
-                day: 'Today'
-                , time: '8:00 AM'
-            }
-        }
-        , {
-            name: 'Prototype Creation'
-            , scheduledAt: {
-                day: 'Today'
-                , time: '8:00 AM'
-            }
-        }
-    ] );
+    const [ list, addNewTask ] = useState();
 
     const handleTabSelection = ( e, selectedTab ) => {
         setSelectedTab( selectedTab );
@@ -97,46 +37,67 @@ const List = ( { listTitle } ) => {
     return (
         <Grid
             item
-            className={ListContainer}
-            xs={12}
-            md={4}
         >
             <div className={title}>
                 <Typography variant={'h5'}>{listTitle}</Typography>
+                <Typography
+                    variant={'h6'}
+                    className={dateSubtitle}
+
+                >{date && date}</Typography>
             </div>
-            <Tabs
-                value={selectedTab}
-                onChange={handleTabSelection}
-            >
-                <Tab
-                    label='All'
-                    className={taskTab}
-
-                />
-                <Tab
-                    className={taskTab}
-                    label='Projects' />
-            </Tabs>
             {
-                selectedTab === 0 && <TabContent>
+                showTabs && <Tabs
+                    value={selectedTab}
+                    onChange={handleTabSelection}
+                >
+                    <Tab
+                        label='All'
+                        className={taskTab}
 
-                    <Button
-                        component='div'
-                        className={taskCreator}
-                        onClick={createTask}
-                    >
-                        +Create Task
-                    </Button>
-                    {list && list.map( ( task, idx ) => {
-                        return (
-                            <ListItem
-                                key={idx}
-                                taskName={task.name}
-                                scheduledAt={task.scheduledAt} />
-                        );
-                    } )}
-                </TabContent>
+                    />
+                    <Tab
+                        className={taskTab}
+                        label='Projects' />
+                </Tabs>
             }
+            {
+                selectedTab === 0 &&
+                <Grid item>
+                    <TabContent>
+
+                        <Button
+                            component='div'
+                            className={taskCreator}
+                            onClick={createTask}
+                        >
+                            +Create Task
+                        </Button>
+                        {exTasks && exTasks.map( ( task, idx ) => {
+                            return (
+                                <ListItem
+                                    key={idx}
+                                    taskName={task.name}
+                                    scheduledAt={task.scheduledAt}
+                                />
+                            );
+                        } )}
+                    </TabContent>
+                    {listTitle === 'Today' &&
+                        <section className={completedSection}>
+
+                            <h2 className={dashedLines}>
+                            </h2>
+                            <span className={completedTitle} >
+                                Completed
+                            </span>
+                            <h2 className={dashedLines}>
+                            </h2>
+                        </section>
+                    }
+                </Grid>
+            }
+
             {
                 selectedTab === 1 && <TabContent>
                     Projects would go here...

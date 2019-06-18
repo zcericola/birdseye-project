@@ -8,12 +8,12 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 
-const Login = ( props ) => {
+const Login = (props) => {
 
     const signIn = () => () => {
         //sign in logic here
         //validate inputs and if valid, allow user to login
-        return props.history.push( '/dashboard' );
+        return props.history.push('/dashboard');
     };
     const {
         loginContainer
@@ -34,34 +34,31 @@ const Login = ( props ) => {
 
     } = useStyles();
     return (
-        <Grid container justify='center'
+        <Grid container
+            justify='center'
             alignItems='center'
             className={loginContainer}>
             <Grid
                 item
                 className={formContainer}
                 xs={12} md={5}
-                justify='flex-start'
-                direction='column'
-                alignItems='center'
-                spacing={2}
-
             >
                 <Grid item
-                    className={header}
-                >
-                    <img src={logo}
-                        className={birdsEyeLogo}
-                        alt='Birdseye logo'
-                    />
-                    <Typography
-                        variant='h5'
-                        spacing={5}
-                        className={title}
-                    >
-                        Welcome to Birdseye!
-                    </Typography>
+                    xs={12}
 
+                >
+                    <div className={header}>
+                        <img src={logo}
+                            className={birdsEyeLogo}
+                            alt='Birdseye logo'
+                        />
+                        <Typography
+                            variant='h5'
+                            className={title}
+                        >
+                            Welcome to Birdseye!
+                        </Typography>
+                    </div>
                 </Grid>
                 <Grid container
                     direction='column'
@@ -95,8 +92,8 @@ const Login = ( props ) => {
                     <Button
                         variant='outlined'
                         className={loginBtn}
-                        color='black'
                         margin='normal'
+                        style={{ background: 'black', color: 'white' }}
                         onClick={signIn()}
                     >
                         Sign In

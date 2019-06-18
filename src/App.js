@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { fragment } from 'react';
 import './App.css';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import Theme from './components/Theme/Theme';
@@ -9,15 +9,15 @@ const App = () => {
     return (
         <Router>
             <Theme>
-                <div className="app-container">
+                <fragment>
                     <Switch>
                         <Route exact path="/" component={Login} />
                         <Route path="/dashboard" component={Dashboard} />
                     </Switch>
-                </div>
+                </fragment>
             </Theme>
         </Router>
     );
-}
+};
 
 export default App;
