@@ -23,8 +23,6 @@ const Search = ( props ) => {
         <Grid
             item
             className={searchContainer}
-            xs={12}
-            md={8}
         >
             <img src={logo}
                 className={birdsEyeLogo}

@@ -34,32 +34,31 @@ const Login = ( props ) => {
 
     } = useStyles();
     return (
-        <Grid container justify='center' alignItems='center' className={loginContainer}>
+        <Grid container
+            justify='center'
+            alignItems='center'
+            className={loginContainer}>
             <Grid
-                container
+                item
                 className={formContainer}
                 xs={12} md={5}
-                justify='flex-start'
-                direction='column'
-                alignItems='center'
-                spacing={2}
-
             >
                 <Grid item
-                    className={header}
-                >
-                    <img src={logo}
-                        className={birdsEyeLogo}
-                        alt='Birdseye logo'
-                    />
-                    <Typography
-                        variant='h5'
-                        spacing={5}
-                        className={title}
-                    >
-                        Welcome to Birdseye!
-                    </Typography>
+                    xs={12}
 
+                >
+                    <div className={header}>
+                        <img src={logo}
+                            className={birdsEyeLogo}
+                            alt='Birdseye logo'
+                        />
+                        <Typography
+                            variant='h5'
+                            className={title}
+                        >
+                            Welcome to Birdseye!
+                        </Typography>
+                    </div>
                 </Grid>
                 <Grid container
                     direction='column'
@@ -93,8 +92,8 @@ const Login = ( props ) => {
                     <Button
                         variant='outlined'
                         className={loginBtn}
-                        color='black'
                         margin='normal'
+                        style={{ background: 'black', color: 'white' }}
                         onClick={signIn()}
                     >
                         Sign In
@@ -103,7 +102,6 @@ const Login = ( props ) => {
                         variant='outlined'
                         className={loginBtn}
                         margin='normal'
-                        color='#fff'
 
                     >
                         Create An Account

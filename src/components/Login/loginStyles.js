@@ -12,27 +12,26 @@ const useStyles = makeStyles( {
     }
     , formContainer: {
         height: '100vh'
-
-
     }
     , header: {
-
         height: '30vh'
         , width: '50%'
+        , margin: '0 auto'
         , display: 'flex'
         , padding: 0
-        , margin: 0
         , flexDirection: 'column'
         , justifyContent: 'space-evenly'
+        , alignItems: 'flex-start'
+
     }
     , title: {
         color: '#444'
+
 
     }
     , birdsEyeLogo: {
         height: 50
         , width: 60
-
 
     }
     , passwordLink: {

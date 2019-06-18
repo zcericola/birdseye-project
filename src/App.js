@@ -9,15 +9,15 @@ const App = () => {
     return (
         <Router>
             <Theme>
-                <div className="app-container">
-                    <Switch>
-                        <Route exact path="/" component={Login} />
-                        <Route path="/dashboard" component={Dashboard} />
-                    </Switch>
-                </div>
+
+                <Switch>
+                    <Route exact path="/" component={Login} />
+                    <Route path="/dashboard" component={Dashboard} />
+                </Switch>
+
             </Theme>
         </Router>
     );
-}
+};
 
 export default App;
