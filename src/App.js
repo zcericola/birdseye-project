@@ -1,4 +1,4 @@
-import React, { fragment } from 'react';
+import React from 'react';
 import './App.css';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import Theme from './components/Theme/Theme';
@@ -9,12 +9,12 @@ const App = () => {
     return (
         <Router>
             <Theme>
-                <fragment>
-                    <Switch>
-                        <Route exact path="/" component={Login} />
-                        <Route path="/dashboard" component={Dashboard} />
-                    </Switch>
-                </fragment>
+
+                <Switch>
+                    <Route exact path="/" component={Login} />
+                    <Route path="/dashboard" component={Dashboard} />
+                </Switch>
+
             </Theme>
         </Router>
     );

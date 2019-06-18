@@ -8,12 +8,12 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 
-const Login = (props) => {
+const Login = ( props ) => {
 
     const signIn = () => () => {
         //sign in logic here
         //validate inputs and if valid, allow user to login
-        return props.history.push('/dashboard');
+        return props.history.push( '/dashboard' );
     };
     const {
         loginContainer
@@ -102,7 +102,6 @@ const Login = (props) => {
                         variant='outlined'
                         className={loginBtn}
                         margin='normal'
-                        color='#fff'
 
                     >
                         Create An Account
