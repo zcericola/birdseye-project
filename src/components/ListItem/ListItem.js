@@ -28,7 +28,7 @@ const ListItem = ( { taskName, scheduledAt } ) => {
             </Grid>
             <Grid item className={description}>
                 <Typography
-                    variant='h7'
+                    variant='h6'
                     className={accentText}>
                     Birdseye - Application
                 </Typography>
@@ -43,13 +43,13 @@ const ListItem = ( { taskName, scheduledAt } ) => {
             <Grid item
                 className={timeContainer}>
                 <Typography
-                    variant='h7'
+                    variant='h6'
                     className={accentText}
                 >
                     {day}
                 </Typography>
                 <Typography
-                    variant='h7'
+                    variant='h6'
                     className={accentText}
                 >
                     {time}

@@ -34,9 +34,11 @@ const Login = ( props ) => {
 
     } = useStyles();
     return (
-        <Grid container justify='center' alignItems='center' className={loginContainer}>
+        <Grid container justify='center'
+            alignItems='center'
+            className={loginContainer}>
             <Grid
-                container
+                item
                 className={formContainer}
                 xs={12} md={5}
                 justify='flex-start'
