@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Component matches the snapshot 1`] = `
+<div
+  className="MuiGrid-root makeStyles-loginContainer-1 MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+>
+  <div
+    className="MuiGrid-root makeStyles-formContainer-2 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-5"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+    >
+      <div
+        className="makeStyles-header-3"
+      >
+        <img
+          alt="Birdseye logo"
+          className="makeStyles-birdsEyeLogo-5"
+          src="birdseye_logo.png"
+        />
+        <h5
+          className="MuiTypography-root makeStyles-title-4 MuiTypography-h5"
+        >
+          Welcome to Birdseye!
+        </h5>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root makeStyles-formFieldsContainer-8 MuiGrid-container MuiGrid-direction-xs-column MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+    >
+      <div
+        className="MuiGrid-root makeStyles-textFieldWrapper-9 MuiGrid-item"
+      >
+        <label
+          className="makeStyles-label-11"
+        >
+          Email Address
+        </label>
+        <div
+          className="MuiFormControl-root MuiTextField-root makeStyles-formField-10 MuiFormControl-marginDense MuiFormControl-fullWidth"
+        >
+          <div
+            className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+            onClick={[Function]}
+          >
+            <fieldset
+              aria-hidden={true}
+              className="PrivateNotchedOutline-root-181 MuiOutlinedInput-notchedOutline"
+              style={
+                Object {
+                  "paddingLeft": 8,
+                }
+              }
+            >
+              <legend
+                className="PrivateNotchedOutline-legend-182"
+                style={
+                  Object {
+                    "width": 0.01,
+                  }
+                }
+              >
+                <span
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "&#8203;",
+                    }
+                  }
+                />
+              </legend>
+            </fieldset>
+            <input
+              aria-invalid={false}
+              className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="MuiGrid-root makeStyles-textFieldWrapper-9 MuiGrid-item"
+      >
+        <label
+          className="makeStyles-label-11"
+        >
+          Password
+        </label>
+        <div
+          className="MuiFormControl-root MuiTextField-root makeStyles-formField-10 MuiFormControl-marginDense MuiFormControl-fullWidth"
+        >
+          <div
+            className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+            onClick={[Function]}
+          >
+            <fieldset
+              aria-hidden={true}
+              className="PrivateNotchedOutline-root-181 MuiOutlinedInput-notchedOutline"
+              style={
+                Object {
+                  "paddingLeft": 8,
+                }
+              }
+            >
+              <legend
+                className="PrivateNotchedOutline-legend-182"
+                style={
+                  Object {
+                    "width": 0.01,
+                  }
+                }
+              >
+                <span
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "&#8203;",
+                    }
+                  }
+                />
+              </legend>
+            </fieldset>
+            <input
+              aria-invalid={false}
+              className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              required={false}
+              type="password"
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        className="MuiButtonBase-root MuiButton-root makeStyles-loginBtn-12 MuiButton-outlined"
+        disabled={false}
+        margin="normal"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragEnd={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "background": "black",
+            "color": "white",
+          }
+        }
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Sign In
+        </span>
+      </button>
+      <button
+        className="MuiButtonBase-root MuiButton-root makeStyles-loginBtn-12 MuiButton-outlined"
+        disabled={false}
+        margin="normal"
+        onBlur={[Function]}
+        onDragEnd={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Create An Account
+        </span>
+      </button>
+      <span
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiButton-root makeStyles-passwordLink-6 MuiButton-text"
+        onBlur={[Function]}
+        onDragEnd={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        spacing={2}
+        tabIndex={0}
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Forgot Password
+        </span>
+      </span>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root makeStyles-bgContainer-7 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-7"
+  />
+</div>
+`;

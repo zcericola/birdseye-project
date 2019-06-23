@@ -1,123 +1,51 @@
 {
     "env": {
         "browser": true,
-        "node": false
+        "es6": true,
+        "node": true,
+        "jest": true
     },
     "extends": [
+        "prettier",
         "eslint:recommended",
         "plugin:react/recommended"
     ],
-    "parser": "babel-eslint",
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "ecmaFeatures": {
-            "jsx": true,
-            "modules": true,
-            "spread": true,
-            "restParams": true,
-            "experimentalObjectRestSpread": true
-        },
-        "sourceType": "module"
-    },
     "plugins": [
-        "react"
+        "jest"
     ],
     "rules": {
-        "indent": [
+        "prettier/prettier": [
+            "warn"
+        ],
+        "no-unused-vars": 1,
+        "react/prop-types": 0,
+        "linebreak-style": [
             "error",
-            4,
-            {
-                "SwitchCase": 1
-            }
-        ],
-        "max-len": [
-            "warn",
-            {
-                "code": 90,
-                "ignoreTemplateLiterals": false
-            }
-        ],
-        "comma-style": [
-            "warn",
-            "first",
-            {
-                "exceptions": {
-                    "ObjectPattern": false,
-                    "ArrayPattern": false
-                }
-            }
-        ],
-        "comma-spacing": [
-            "error",
-            {
-                "before": false,
-                "after": true
-            }
-        ],
-        "comma-dangle": [
-            "error",
-            "never"
+            "unix"
         ],
         "quotes": [
             "error",
-            "single",
-            {
-                "allowTemplateLiterals": true
-            }
+            "single"
         ],
-        "linebreak-style": [
+        "indent": [
             "warn",
-            "unix"
-        ],
-        "space-in-parens": [
-            "error",
-            "always"
-        ],
-        "array-bracket-spacing": [
-            "error",
-            "always"
-        ],
-        "computed-property-spacing": [
-            "error",
-            "always"
-        ],
-        "object-curly-spacing": [
-            "error",
-            "always"
-        ],
-        "template-curly-spacing": [
-            "error",
-            "always"
-        ],
-        "brace-style": [
-            "warn",
-            "1tbs",
-            {
-                "allowSingleLine": true
-            }
-        ],
-        "strict": [
-            "warn",
-            "global"
-        ],
-        "space-before-function-paren": [
-            "error",
-            "always"
-        ],
-        "no-unused-vars": [
-            "warn",
-            {
-                "args": "none"
-            }
+            4
         ],
         "semi": [
             "error",
             "always"
-        ],
-        "no-case-declarations": "off",
-        "no-unsafe-finally": "off",
-        "no-unreachable": "warn",
-        "no-undef": "warn",
-        "no-empty-pattern": "warn"
-    }
+        ]
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "no-case-declarations": "off",
+    "no-unsafe-finally": "off",
+    "no-unreachable": "warn",
+    "no-undef": "warn",
+    "no-empty-pattern": "warn"
 }

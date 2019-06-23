@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component matches the snapshot 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-item"
+>
+  <div
+    className="makeStyles-title-2"
+  >
+    <h5
+      className="MuiTypography-root MuiTypography-h5"
+    />
+    <h6
+      className="MuiTypography-root makeStyles-dateSubtitle-4 MuiTypography-h6"
+    />
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item"
+  >
+    <div
+      className="MuiGrid-root makeStyles-contentContainer-141 MuiGrid-item"
+    >
+      <div
+        aria-disabled={false}
+        className="MuiButtonBase-root MuiButton-root makeStyles-taskCreator-3 MuiButton-text"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragEnd={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="MuiButton-label"
+        >
+          +Create Task
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

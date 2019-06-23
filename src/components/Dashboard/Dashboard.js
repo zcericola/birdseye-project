@@ -13,8 +13,8 @@ const Dashboard = () => {
         , dateTasksContainer
 
     } = useStyles();
-    const today = moment().format( 'MMMM DD, YYYY' );
-    const tomorrow = moment().add( 1, 'day' ).format( 'MMMM DD, YYYY' );
+    const today = moment().format('MMMM DD, YYYY');
+    const tomorrow = moment().add(1, 'day').format('MMMM DD, YYYY');
 
     return (
         <Grid
@@ -64,7 +64,7 @@ const Dashboard = () => {
                 </Grid>
             </Grid>
 
-        </Grid > );
+        </Grid >);
 
 };
 
