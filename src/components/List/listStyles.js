@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { makeStyles } from '@material-ui/styles';
 import {
     primaryColor
@@ -10,7 +9,7 @@ import {
 } from '../../globalStyles';
 import { relative } from 'path';
 
-const useStyles = makeStyles( {
+const useStyles = makeStyles({
     ListContainer: {
         backgroundColor: '#fff'
     }
@@ -54,6 +53,6 @@ const useStyles = makeStyles( {
         , width: '80%'
     }
 
-} );
+});
 
 export default useStyles;

@@ -9,12 +9,10 @@ const App = () => {
     return (
         <Router>
             <Theme>
-
                 <Switch>
                     <Route exact path="/" component={Login} />
                     <Route path="/dashboard" component={Dashboard} />
                 </Switch>
-
             </Theme>
         </Router>
     );
